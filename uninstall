@@ -1,0 +1,65 @@
+--[[ Vape Folder Uninstaller
+
+     Credit to Sammz (original creator)
+
+]]
+
+  game.StarterGui:SetCore("SendNotification", {   
+  Title = "Uninstalling Vape...";  
+   Text = "It won't get uninstalled if you use shitsploits like wave";
+   Duration = 10;
+ })
+end
+
+wait(5)
+  game.StarterGui:SetCore("SendNotification", {   
+  Title = "Identifying your executor to see if it's detected garbage";  
+   Text = "You'll be kicked when it has failed";
+   Duration = 10;
+ })
+
+wait(5)
+if identifyexecutor and ({identifyexecutor()})[1] == 'Wave' then 
+	lplr:Kick("Stop using shitsploits. Your vape folder will not uninstall on detected garbage. [Executor: Wave]")
+    return
+end
+
+if identifyexecutor and ({identifyexecutor()})[1] == 'Krampus' then 
+	lplr:Kick("Stop using shitsploits. Your vape folder will not uninstall on detected garbage. [Executor: Krampus]")
+    return
+end
+
+wait(10)
+local lplr = game:GetService("Players").LocalPlayer
+local names = {'GuiLibrary.lua', 'MainScript.lua', 'Universal.lua'}
+local folder = 'vape'
+if not isfolder(folder) then
+    lplr:Kick("Failed successfully")
+    return
+end
+function dfif(folderPath)
+    local files = listfiles(folderPath)
+    for _, fn in pairs(files) do
+        delfile(folderPath .. '/' .. fn)
+    end
+end
+function deleteFiles()
+    local ftd = {'commithash.txt', 'assetsversion.txt'}
+    for _, fn in pairs(ftd) do
+        if isfolder(fn) then
+              delfile(folder .. '/' .. fn)
+       end
+    end
+end
+for _, name in pairs(names) do
+    if isfile(name) then
+        delfile(folder .. '/' .. name)
+     end
+end
+deleteFiles()
+delfolder(folder .. '/' .. 'assets')
+delfolder(folder .. '/' .. 'Libraries')
+delfolder(folder .. '/' .. 'Profiles')
+delfolder(folder .. '/' .. 'CustomModules')
+delfolder(folder)
+lplr:Kick("VapeFolderUninstall: \n Uninstall success!")
