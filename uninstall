@@ -1,50 +1,57 @@
 --[[ Vape Folder Uninstaller
 
-     Credit to Sammz (original creator of some codes)
+     Credit to Sammz (original creator)
 
 ]]
 
-local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-function xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+local lplr = game:GetService("Players").LocalPlayer
+  game.StarterGui:SetCore("SendNotification", {   
+  Title = "Uninstalling Vape...";  
+   Text = "It won't get uninstalled if you already have the vape folder deleted";
+   Duration = 10;
+ })
 
-data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+if identifyexecutor and ({identifyexecutor()})[1] == 'Wave' then 
+	lplr:Kick('Stop using detected garbage, Vape will not uninstall unless you install an undetected executor.')
+	error(res)
+    return
+end
 
-
- 
-
-
-local lplr = game:GetService(xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('VdqYnXNAiKMDxZlSLNhANwYbpoSxxndiqgNltjuWquNelHMRhuqhZuwUGxheWVycw==')).LocalPlayer
-  game.StarterGui:SetCore(xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('jQjyjhKqAhJVjBsJfqWEkIDNmvTIUddPnuHTRmMelGexfjxSetkIpFJU2VuZE5vdGlmaWNhdGlvbg=='), {   
-  Title = xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('jAiSLSnvvnQDtFbEUQVwdwFujVXReAlehlfWfswyVdJTJTOSURmGytXVW5pbnN0YWxsaW5nIFZhcGUuLi4=');  
-   Text = xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('FQuulrvDkKYxRbkfpnWOhuXRhnELtHTqEiEjfJXdIgeMeBlsTUiVBOkSXQgd29u')t get uninstalled if you already have the vape folder deletedxvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('ulNAUkMBtNVCoDYtWzwXTanDFmpuQcRNOnpHYaeKNjaAstpJvuPjunUOw0KICAgRHVyYXRpb24gPSAxMDsNCiB9KQ0KDQppZiBpZGVudGlmeWV4ZWN1dG9yIGFuZCAoe2lkZW50aWZ5ZXhlY3V0b3IoKX0pWzFdID09IA==')WavexvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('atXDwAruMvTZiZSgmNoVQUTEBRufffSKcNgfwXXOxjftPMBqKWUwovHIHRoZW4gDQoJbHBscjpLaWNrKA==')Stop using detected garbage, Vape will not uninstall unless you install an undetected executor.xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('FnxmiYnkwuBFPvBMcbEkMHCfclYTIsWucjrFHIPHdGeIbvBZnZGnaXGKQ0KCWVycm9yKHJlcykNCiAgICByZXR1cm4NCmVuZA0KDQp3YWl0KDUpDQpsb2NhbCBuYW1lcyA9IHs=')GuiLibrary.luaxvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('KvfSogsFMiZnZNQtkaZWXnphedtzbwZrZNXZVHTrIXresTjcQavlbrjLCA=')MainScript.luaxvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('nQGWYBEsTNvxZrWQjnkmPmytKGlEdydsyGHFiYipFHzLisacoKMSwDkLCA=')Universal.luaxvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('vMAATDrjWkIHqTnQDCNzfYiqWrvVIwVOSSNBFqbWpiZfIyqWBNDnfHtfQ0KbG9jYWwgZm9sZGVyID0g')vapexvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('GUqIIrXytukQzWWWKNgXeNtioGPOfxMGQVRVYWkvYyybfvBJGJRbJEJDQppZiBub3QgaXNmb2xkZXIoZm9sZGVyKSB0aGVuDQogICAgZ2FtZS5TdGFydGVyR3VpOlNldENvcmUo')SendNotificationxvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('vRlWKSkuAxFeJHjlUZzMQKmPbJsHlMUMMHzpwuxzLravGqoARtNoGZULCB7ICAgDQogIFRpdGxlID0g')Failed Successfully.xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('GyNWuPpqLoOqxaYJeYQmqqwmBpyPSMNREeDeoDgwjxjNpbYbHvXcoysOyAgDQogICBUZXh0ID0g')You donxvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('nXlHROLTNHYaqagKZzrhJYFKAMGUNBtfcCYjUNtGxbFTbWUPVTHZTAldCBoYXZlIHRoZSBWYXBlIGZvbGRlci4=');
+wait(5)
+local names = {'GuiLibrary.lua', 'MainScript.lua', 'Universal.lua'}
+local folder = 'vape'
+if not isfolder(folder) then
+    game.StarterGui:SetCore("SendNotification", {   
+  Title = "Failed Successfully.";  
+   Text = "You don't have the Vape folder.";
    Duration = 30;
-   Button1 = xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('AqctlStjYtjlsOvByGbTxfFGCQqQrGAhxTgGhDqXamscWyKVSdLwzDPRGlzbWlzcw==');
+   Button1 = "Dismiss";
  })
     return
 end
 function dfif(folderPath)
     local files = listfiles(folderPath)
     for _, fn in pairs(files) do
-        delfile(folderPath .. xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('vpJCdEpzhFqZotZMYKcrrGmKUOxPMOTiiAUYNfLWcnlxpwsuxyJQBdKLw==') .. fn)
+        delfile(folderPath .. '/' .. fn)
     end
 end
 function deleteFiles()
-    local ftd = {xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('KfZHFUxmyRLjNrdqxpcNfDzTFlSpLaKzTNbjffiBfZHBlgaAVJWGjNLY29tbWl0aGFzaC50eHQ='), xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('nUQFPeunOGrCchJFANkVIcIZlEvfpLmhZOWlsefglpIeVbWEfFhmczuYXNzZXRzdmVyc2lvbi50eHQ=')}
+    local ftd = {'commithash.txt', 'assetsversion.txt'}
     for _, fn in pairs(ftd) do
         if isfolder(fn) then
-              delfile(folder .. xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('hXgMbfVybTjStJJUTDwQjIcPfGvYYoMepDczdEyrzjAmaBbYgEFAWMFLw==') .. fn)
+              delfile(folder .. '/' .. fn)
        end
     end
 end
 for _, name in pairs(names) do
     if isfile(name) then
-        delfile(folder .. xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('QxKQUsFGwNOGmfzwrJdUJIawDSTNwHnYCykGnRLvXNAEdzhGTZwMsccLw==') .. name)
+        delfile(folder .. '/' .. name)
      end
 end
 deleteFiles()
-delfolder(folder .. xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('ffoXKTSkFpIuAgYAWWQOwYhcsdqWWYutEZzmxdFoTNRWyktKXaJJxFoLw==') .. xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('MhztAMHwPfnKTptfAigwzyiizqMstOTItLuwvfYlvPJKOlQZacrOJuuYXNzZXRz'))
-delfolder(folder .. xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('IVxLhCZNjQewvRFyGNjeXYPXnteFQSmvNqhIQgfXRrcweYLEGcnXgpPLw==') .. xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('fHwBCDCmGsrrNDuanpkRLuVzWHcKLKTiCTvBFHqGiLXUWetvQxbGBlQTGlicmFyaWVz'))
-delfolder(folder .. xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('mzAkhyHWUqobwrIzFrqmwuzLuotnarIcqDdUVrJPPeVOTACFKeGlpGULw==') .. xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('hATrXEcmkLfBBamLJROIwpSasgjCQITUwGnjZvJLSaeSkObPkUxgkjnUHJvZmlsZXM='))
-delfolder(folder .. xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('ojGBfJjbhGBHZSzetLBgFtkRrdTLQUzQWovhqRllVxOAyUdUrAEWNgiLw==') .. xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('ZSWvrBwXBvJZFADbQPAsBQbAVmvmhXMfkoRDJfuEmZvFjuPxpSxeuflQ3VzdG9tTW9kdWxlcw=='))
+delfolder(folder .. '/' .. 'assets')
+delfolder(folder .. '/' .. 'Libraries')
+delfolder(folder .. '/' .. 'Profiles')
+delfolder(folder .. '/' .. 'CustomModules')
 delfolder(folder)
-lplr:Kick(xvFDWtdXZtvjIeTsLXxUplIvUkklJYXdtkQubUGxHbqdLOIaokKLxEcceStiDcZicRIizZQY('gWSnJaicAJRnfNkirzJkRDBVAzISaNQjHqMFORfJmfLBtcnABiPAjHSVmFwZVVuaW5zdGFsbDogXG4gVW5pbnN0YWxsIHN1Y2Nlc3NmdWw='))    
+lplr:Kick("VapeUninstall: \n Uninstall successful")
