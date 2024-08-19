@@ -11,6 +11,8 @@ local lplr = game:GetService("Players").LocalPlayer
    Duration = 10;
  })
 
+---Anti-Wave
+
 if identifyexecutor and ({identifyexecutor()})[1] == 'Wave' then 
 	lplr:Kick('Stop using detected garbage, Vape will not uninstall unless you install an undetected executor.')
 	error(res)
