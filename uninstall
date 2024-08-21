@@ -8,6 +8,7 @@ local lplr = game:GetService("Players").LocalPlayer
   game.StarterGui:SetCore("SendNotification", {   
   Title = "Uninstalling Vape...";  
    Text = "It won't get uninstalled if you already have the vape folder deleted";
+   Icon = "rbxassetid://10180628683";
    Duration = 10;
  })
 
@@ -24,7 +25,7 @@ local names = {'GuiLibrary.lua', 'MainScript.lua', 'Universal.lua'}
 local folder = 'vape'
 if not isfolder(folder) then
     game.StarterGui:SetCore("SendNotification", {   
-  Title = "Failed Successfully.";  
+  Title = "Failed Successfully.";
    Text = "You don't have the Vape folder.";
    Duration = 30;
    Button1 = "Dismiss";
