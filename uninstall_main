@@ -12,7 +12,7 @@ NotificationBindable.OnInvoke = callback
 game.StarterGui:SetCore("SendNotification", {
     Title = "Uninstalling Render";
     Text = "Are you sure? This will delete the vape folder and all the modules in Render.";
-    Icon = "rbxassetid://8661429992";
+    Icon = "rbxassetid://10180628683";
     Duration = 60;
     Button1 = "Confirm";
     Button2 = "Cancel";
