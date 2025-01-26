@@ -12,23 +12,15 @@ local lplr = game:GetService("Players").LocalPlayer
    Duration = 10;
  })
 
----Anti-Wave
-
-if identifyexecutor and ({identifyexecutor()})[1] == 'Wave' then 
-	lplr:Kick('Stop using detected garbage, Vape will not uninstall unless you install an undetected executor.')
-	error(res)
-    return
-end
-
 wait(5)
-local names = {'GuiLibrary.lua', 'MainScript.lua', 'Universal.lua'}
-local folder = 'vape'
+local names = {'main.lua'}
+local folder = 'newvape'
 if not isfolder(folder) then
     game.StarterGui:SetCore("SendNotification", {   
   Title = "Failed Successfully.";
    Text = "You don't have the Vape folder.";
    Duration = 30;
-   Button1 = "Dismiss";
+   Button1 = "Sigh (Dismiss)";
  })
     return
 end
@@ -38,14 +30,6 @@ function dfif(folderPath)
         delfile(folderPath .. '/' .. fn)
     end
 end
-function deleteFiles()
-    local ftd = {'commithash.txt', 'assetsversion.txt'}
-    for _, fn in pairs(ftd) do
-        if isfolder(fn) then
-              delfile(folder .. '/' .. fn)
-       end
-    end
-end
 for _, name in pairs(names) do
     if isfile(name) then
         delfile(folder .. '/' .. name)
@@ -53,8 +37,9 @@ for _, name in pairs(names) do
 end
 deleteFiles()
 delfolder(folder .. '/' .. 'assets')
-delfolder(folder .. '/' .. 'Libraries')
-delfolder(folder .. '/' .. 'Profiles')
-delfolder(folder .. '/' .. 'CustomModules')
+delfolder(folder .. '/' .. 'games')
+delfolder(folder .. '/' .. 'guis')
+delfolder(folder .. '/' .. 'libraries')
+delfolder(folder .. '/' .. 'profiles')
 delfolder(folder)
-lplr:Kick("VapeUninstall: \n Uninstall successful")
+lplr:Kick("VapeUninstall: \n Uninstall successful, rejoin for changes to be saved.")
