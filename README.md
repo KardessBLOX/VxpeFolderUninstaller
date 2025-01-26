@@ -1,13 +1,13 @@
 # Hi there
-If you're uninstalling a Vape config, you're at the right place
+If you're uninstalling Vape or a config, you're at the right place
 
-### This is the main script.
+### This is the main script. You can execute it or put it at a script hub.
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/KardessBLOX/VxpeFolderUninstaller/main/uninstall_main", true))()
 ```
 
-# Render Intents
-This script is designed for Render Intents. But it can work for other configs or your original vape.
+# New Update!
+This script is revamped to work for the new Vape Rewrite
 
 ### This is open source!
 Skid this script as much as you want. I don't care.
@@ -16,8 +16,4 @@ Skid this script as much as you want. I don't care.
 Kardess - ```Identifying executor - Notifications and callbacks```
 Sammz - ```Delete all Vape files - Detects if vape folder is already deleted```
 
-# ⚠️CAUTION⚠️
-This script is still in beta, you may experience issues as such as: Not loading, Notification only executing, False detection of no Vape folder
-
-### No Wave Allowed
-Wave is detected and they messed up bypassing HWID thingy. So we made this script Wave proof by using ```identifyexecutor```.
+### Thanks for using this script.
